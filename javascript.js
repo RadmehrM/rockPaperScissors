@@ -40,7 +40,15 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 
-    return "Score: You - " + you + " Computer - " + computer;
+    if (you > computer) {
+        console.log("You WIN");
+        return "Score: You - " + you + " Computer - " + computer;
+    } else {
+        console.log("You LOSE");
+        return "Score: You - " + you + " Computer - " + computer;
+    }
+
+    
 
   }
 
